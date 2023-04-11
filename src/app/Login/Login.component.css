@@ -1,0 +1,17 @@
+.card {
+  margin-top: 300px;
+  border: none;
+  top: 53%;
+  left: 100%;
+  position: absolute;
+  padding: 40px;
+  width: 500px;
+  transform: translate(-50%, -50%);
+  background-color: #eee4e1;
+  color: #5a4441;
+}
+
+
+.error {
+  border: 1px solid red;
+}

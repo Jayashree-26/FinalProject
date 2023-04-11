@@ -1,0 +1,11 @@
+{
+  "registerUsers": [
+    {
+      "username": "pooja",
+      "email": "pooja@gmail.com",
+      "password": "poojaa",
+      "cpassword": "p",
+      "id": 1
+    }
+  ]
+}

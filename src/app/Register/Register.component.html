@@ -1,0 +1,65 @@
+<app-Header></app-Header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1>SignUp</h1>
+        </div>
+        <form [formGroup]="registerForm" (ngSubmit)="register()">
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input formControlName="username" type="text" class="form-control" id="username">
+            <div class="form-text text-danger"
+              *ngIf="username.errors?.['required'] && (username.touched || username.dirty)">
+              Username is required.
+            </div>
+            <div class="form-text text-danger"
+              *ngIf="username.errors?.['minlength'] && (username.touched || username.dirty)">
+              Username is too short.
+            </div>
+            <div class="form-text text-danger"
+              *ngIf="username.errors?.['pattern'] && (username.touched || username.dirty)">
+              Username should start with alphabets.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input formControlName="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            <div class="form-text text-danger" *ngIf="email.errors?.['required'] && (email.touched || email.dirty)">
+              Email is required.
+            </div>
+            <div class="form-text text-danger" *ngIf="email.errors?.['email'] && (email.touched || email.dirty)">
+              Email is Invalid.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input formControlName="password" type="password" id="password" class="form-control">
+            <div class="form-text text-danger"
+              *ngIf="password.errors?.['required'] && (password.touched || password.dirty)">
+              Password is required.
+            </div>
+            <div class="form-text text-danger"
+              *ngIf="password.errors?.['minlength'] || password.errors?.['maxlength'] && (password.touched || password.dirty)">
+              Password should be atleast 6 and maximum 15 characters long.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="confirm_password" class="form-label">Confirm Password</label>
+            <input formControlName="confirm_password" id="confirm_password" class="form-control">
+            <div class="form-text text-danger" [ngStyle]="{'display': repeatPass}"
+              *ngIf="(confirm_password.touched || confirm_password.dirty)">
+              Passwords doesnot match.
+            </div>
+          </div>
+          <button type="submit" [disabled]="registerForm.invalid"
+            style="background-color: #5a4441; border-color: #5a4441; color: #eee4e1;" class="btn btn-primary mb-2"
+            routerLink="/register">Submit</button>
+        </form>
+        <a style="color: #5a4441; margin-top: 10px; text-decoration: none;" routerLink="/login">Already registered?
+          click to Login!</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<nav>
+  <div class="container nav-wrapper">
+    <div class="brand">
+      <img src="/assets/Images/Frame 1 (5).png" style="height:7vh;">
+      <span><strong
+          style="font-size: 37px; color:#5a4441; font-family: 'Cormorant Unicase', sans-serif; cursor: pointer;"
+          routerLink="/home">Mini</strong></span>
+    </div>
+    <ul class="nav-list">
+      <li class="active">
+        <a routerLink="/home">HOME</a>
+      </li>
+      <li class="products">
+        <a (click)="toProducts()">PRODUCTS</a>
+      </li>
+      <li>
+        <button class="btn btn-primary" routerLink="/login">LOGIN</button>
+      </li>
+    </ul>
+  </div>
+</nav>
