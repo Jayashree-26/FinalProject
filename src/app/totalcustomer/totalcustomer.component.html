@@ -1,0 +1,35 @@
+<body style="background-color: #eee4e1;">
+  <div class="recent-grid">
+    <div class="projects">
+      <div class="card">
+        <div class="card-header">
+          <h3>Our Customers</h3>
+          <button class="go-back-button" routerLink="/admindashboard">Go Back</button>
+          <!-- <button> See all <span class="bi bi-arrow-right"></span></button> -->
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="customer-table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Username</th>
+                  <th>Email Address</th>
+                  <!-- <th>Password</th> -->
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let data of allData">
+                  <td>{{data.id}}</td>
+                  <td>{{data.username}}</td>
+                  <td>{{data.email}}</td>
+                  <!-- <td>{{data.password}}</td> -->
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

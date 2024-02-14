@@ -1,11 +1,1191 @@
 {
   "registerUsers": [
     {
-      "username": "pooja",
+      "username": "pooja12",
       "email": "pooja@gmail.com",
-      "password": "poojaa",
-      "cpassword": "p",
-      "id": 1
+      "password": "pooja@12",
+      "confirm_password": "pooja@12",
+      "id": "1"
+    },
+    {
+      "username": "poojuh12",
+      "email": "pooja@gmail.com",
+      "password": "pooja@12",
+      "confirm_password": "pooja@12",
+      "id": "2"
+    },
+    {
+      "username": "pooja12",
+      "email": "pooja@gmail.com",
+      "password": "Pooja@12",
+      "confirm_password": "Pooja@12",
+      "id": "3"
+    },
+    {
+      "username": "pooja21",
+      "email": "mouni@gmail.com",
+      "password": "pooja@12",
+      "confirm_password": "pooja@12",
+      "id": "4"
+    },
+    {
+      "username": "jananishree12",
+      "email": "janani@gmail.com",
+      "password": "janani@12",
+      "confirm_password": "janani@12",
+      "id": "5"
+    },
+    {
+      "username": "janani@12",
+      "email": "gopi@gmail.com",
+      "password": "janani@12",
+      "confirm_password": "janani@12",
+      "id": "6"
+    },
+    {
+      "username": "Nirmal15",
+      "email": "nirmalcse18@gmail.com",
+      "password": "nirmal@12",
+      "confirm_password": "nirmal@12",
+      "id": "7"
+    },
+    {
+      "username": "abcd1234",
+      "email": "abcd1234@gmail.com",
+      "password": "abcd@1234",
+      "confirm_password": "abcd@1234",
+      "id": "8"
+    },
+    {
+      "username": "sriju1611",
+      "email": "sriju@gmail.com",
+      "password": "sriju@16",
+      "confirm_password": "sriju@16",
+      "id": "9"
+    },
+    {
+      "username": "shree12",
+      "email": "shree@gmail.com",
+      "password": "Shree@12",
+      "confirm_password": "Shree@12",
+      "id": "10"
+    },
+    {
+      "username": "suwathi12",
+      "email": "suwathi@gmail.com",
+      "password": "Suwathi@12",
+      "confirm_password": "Suwathi@12",
+      "id": "11"
+    },
+    {
+      "username": "pooja1234",
+      "email": "sri@gmail.com",
+      "password": "Shree@12",
+      "confirm_password": "Shree@12",
+      "id": "12"
+    },
+    {
+      "id": "c0f2",
+      "username": "kavitha12",
+      "email": "kavitha@gmail.com",
+      "password": "kavi@123",
+      "confirm_password": "kavi@123"
+    }
+  ],
+  "datatype": [
+    {
+      "image": "",
+      "name": "silver chain",
+      "price": 12345,
+      "quantity": "1",
+      "category": "silver",
+      "id": "2"
+    }
+  ],
+  "silverring": [
+    {
+      "id": "1",
+      "jewelName": "Leaf Model",
+      "image": "/assets/Images/Sweet Leaves.jpeg",
+      "price": "2000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Silver"
+    },
+    {
+      "id": "2",
+      "jewelName": "Moon and Star",
+      "image": "/assets/Images/Moon nd Star.jpeg",
+      "price": "350",
+      "purity": "91.6",
+      "weight": "1.500 g",
+      "metal": "Silver"
+    },
+    {
+      "id": "3",
+      "jewelName": "Peacock Feather Ring",
+      "image": "/assets/Images/Peacock Feather Ring.jpeg",
+      "price": "2000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Silver"
+    },
+    {
+      "id": "4",
+      "jewelName": "OHm Ring",
+      "image": "/assets/Images/Om Ring.jpeg",
+      "price": "1500",
+      "purity": "91.6",
+      "weight": "4.00 g",
+      "metal": "Silver"
+    },
+    {
+      "id": "5",
+      "jewelName": "Queen Ring",
+      "image": "/assets/Images/Queen Ring.jpeg",
+      "price": "1000",
+      "purity": "91.6",
+      "weight": "4.00 g",
+      "metal": "Silver"
+    }
+  ],
+  "silverchain": [
+    {
+      "id": "6",
+      "jewelName": "Peacock Feather Chain",
+      "image": "/assets/Images/Peacock feather chain.jpeg",
+      "price": "2000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Silver"
+    },
+    {
+      "id": "7",
+      "jewelName": "Layered Butterfly",
+      "image": "/assets/Images/Butterfly Zircon Inlay Necklace.jpeg",
+      "price": "2000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Silver"
+    },
+    {
+      "id": "8",
+      "jewelName": "Infinite Butterfly",
+      "image": "/assets/Images/Butterfly infinity.jpeg",
+      "price": "1000",
+      "purity": "91.6",
+      "weight": "4.00 g",
+      "metal": "Silver"
+    },
+    {
+      "id": "9",
+      "jewelName": "Temple Design Chain",
+      "image": "/assets/Images/Moon.jpeg",
+      "price": "1000",
+      "purity": "91.6",
+      "weight": "4.00 g",
+      "metal": "Silver"
+    },
+    {
+      "id": "10",
+      "jewelName": "Temple Design Chain",
+      "image": "/assets/Images/Moon nd earth.jpeg",
+      "price": "2300",
+      "purity": "91.6",
+      "weight": "7.00 g",
+      "metal": "Silver"
+    }
+  ],
+  "silverearring": [
+    {
+      "id": "11",
+      "jewelName": "Heart Drop Earring",
+      "image": "/assets/Images/Heart drop.jpeg",
+      "price": "450",
+      "purity": "91.6",
+      "weight": "1.500 g",
+      "metal": "Silver"
+    },
+    {
+      "id": "12",
+      "jewelName": "Curvy Hoops",
+      "image": "/assets/Images/Curvy Hoop Earrings.jpeg",
+      "price": "600",
+      "purity": "91.6",
+      "weight": "2.00 g",
+      "metal": "Silver"
+    },
+    {
+      "id": "13",
+      "jewelName": "Hoop Dropings",
+      "image": "/assets/Images/Silver hoop droping.jpeg",
+      "price": "450",
+      "purity": "91.6",
+      "weight": "1.500 g",
+      "metal": "Silver"
+    },
+    {
+      "id": "14",
+      "jewelName": "Snowflake Studs",
+      "image": "/assets/Images/Snowflake Studs.jpeg",
+      "price": "1250",
+      "purity": "91.6",
+      "weight": "5.00 g",
+      "metal": "Silver"
+    },
+    {
+      "id": "15",
+      "jewelName": "Wavy Sterling Hoops",
+      "image": "/assets/Images/Wavy Sterling Hoops.jpeg",
+      "price": "500",
+      "purity": "91.6",
+      "weight": "2.00 g",
+      "metal": "Silver"
+    }
+  ],
+  "silverbangles": [
+    {
+      "id": "16",
+      "jewelName": "Stardust Collection",
+      "image": "/assets/Images/Stardust.png",
+      "price": "2500",
+      "purity": "91.6",
+      "weight": "10.00 g",
+      "metal": "Silver"
+    },
+    {
+      "id": "17",
+      "jewelName": "Floral Design Bangles ",
+      "image": "/assets/Images/FLORAL DESIGN BANGLE.jpeg",
+      "price": "5000",
+      "purity": "91.6",
+      "weight": "20.00 g",
+      "metal": "Silver"
+    },
+    {
+      "id": "18",
+      "jewelName": "Daily Wear Plain",
+      "image": "/assets/Images/Plain Silver Bangle.jpeg",
+      "price": "2500",
+      "purity": "91.6",
+      "weight": "10.00 g",
+      "metal": "Silver"
+    },
+    {
+      "id": "19",
+      "jewelName": "Color Stone Bangles",
+      "image": "/assets/Images/Stone Bangles.jpeg",
+      "price": "2500",
+      "purity": "91.6",
+      "weight": "10.00 g",
+      "metal": "Silver"
+    },
+    {
+      "id": "20",
+      "jewelName": "Floral Bangles",
+      "image": "/assets/Images/Flower Bangle.jpeg",
+      "price": "5500",
+      "purity": "91.6",
+      "weight": "22.00 g",
+      "metal": "Silver"
+    }
+  ],
+  "silverbracelet": [
+    {
+      "id": "21",
+      "jewelName": "Butterfly Handlet",
+      "image": "/assets/Images/Butterfly Handcuff.jpeg",
+      "price": "1500",
+      "purity": "91.6",
+      "weight": "5.00 g",
+      "metal": "Silver"
+    },
+    {
+      "id": "22",
+      "jewelName": "Dainty Leaf Bracelet",
+      "image": "/assets/Images/Dainty Leaf Bracelet.png",
+      "price": "1500",
+      "purity": "91.6",
+      "weight": "5.00 g",
+      "metal": "Silver"
+    },
+    {
+      "id": "23",
+      "jewelName": "Floral Clasp Bracelet",
+      "image": "/assets/Images/silver1.jpg",
+      "price": "1300",
+      "purity": "91.6",
+      "weight": "4.05 g",
+      "metal": "Silver"
+    },
+    {
+      "id": "24",
+      "jewelName": "Charming Stars",
+      "image": "/assets/Images/Bracelet.jpeg",
+      "price": "1600",
+      "purity": "91.6",
+      "weight": "5.00 g",
+      "metal": "Silver"
+    },
+    {
+      "id": "25",
+      "jewelName": "Star Bracelet",
+      "image": "/assets/Images/Floral Bracelet.jpeg",
+      "price": "1300",
+      "purity": "91.6",
+      "weight": "4.500 g",
+      "metal": "Silver"
+    }
+  ],
+  "diamondring": [
+    {
+      "id": "26",
+      "jewelName": "Diamond Cluster",
+      "image": "/assets/Images/diamond3.jpg",
+      "price": "55000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "27",
+      "jewelName": "Halo Diamond Unique Ring",
+      "image": "/assets/Images/in-tulum-bracelet.jpg",
+      "price": "50000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "28",
+      "jewelName": "Promise Ring",
+      "image": "/assets/Images/sring3.jpg",
+      "price": "35000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "29",
+      "jewelName": "Leaf Ring",
+      "image": "/assets/Images/rings4.jpg",
+      "price": "25000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "30",
+      "jewelName": "Single Stone Diamond Ring",
+      "image": "/assets/Images/sring2.jpg",
+      "price": "20000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    }
+  ],
+  "diamondchain": [
+    {
+      "id": "31",
+      "jewelName": "double Layered Necklace",
+      "image": "/assets/Images/3.jpg",
+      "price": "200000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "32",
+      "jewelName": "Daisy Necklace",
+      "image": "/assets/Images/Daisy Chain Necklace.jpeg",
+      "price": "50000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "33",
+      "jewelName": "Glamour Necklace",
+      "image": "/assets/Images/_Beachside Glamour_ Seashell and Silver Necklaces.jpeg",
+      "price": "70000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "34",
+      "jewelName": "Floral Blosson Chain",
+      "image": "/assets/Images/Enchanting Florals Blossom.jpeg",
+      "price": "375000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "35",
+      "jewelName": "Elegant Choker",
+      "image": "/assets/Images/sam.jpeg",
+      "price": "500000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    }
+  ],
+  "diamondearring": [
+    {
+      "id": "36",
+      "jewelName": "Diamond Droppings",
+      "image": "/assets/Images/best-bridal-jewelry-brands.png",
+      "price": "50000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "37",
+      "jewelName": "Diamond Stone With Pearl",
+      "image": "/assets/Images/top women jewelry on amazon.jpeg",
+      "price": "20000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "38",
+      "jewelName": "Diamond Earrings",
+      "image": "/assets/Images/American Diamond Earrings.jpeg",
+      "price": "75000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "39",
+      "jewelName": "Party Wear Studs",
+      "image": "/assets/Images/Gold Earings And Stud _ Party Wear Earrings _ Gold Ear Studs Designs _ Gold Studs Designs.jpeg",
+      "price": "20000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "40",
+      "jewelName": "Stylish Droppings",
+      "image": "/assets/Images/diamond2.jpg",
+      "price": "200000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    }
+  ],
+  "diamondbangles": [
+    {
+      "id": "41",
+      "jewelName": "Dual Toned Floral Bangle",
+      "image": "/assets/Images/Dual Toned Floral Bangles.jpeg",
+      "price": "190000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "42",
+      "jewelName": "Elegant Diamond Bangle",
+      "image": "/assets/Images/BEWITCHED - KLAUS MIKAELSON.jpeg",
+      "price": "222750",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "43",
+      "jewelName": "Wavy Bangles",
+      "image": "/assets/Images/Bhupi.jpeg",
+      "price": "150000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "44",
+      "jewelName": "Traditional Gold Plated Diamond Bangles",
+      "image": "/assets/Images/Traditional Diamond Bangle.jpeg",
+      "price": "600000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "45",
+      "jewelName": "Diamond Bangles",
+      "image": "/assets/Images/Diamond Bangles.jpeg",
+      "price": "108750",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    }
+  ],
+  "diamondbracelet": [
+    {
+      "id": "46",
+      "jewelName": "Elegance Bracelet",
+      "image": "/assets/Images/Natural Diamond Bracelet.jpeg",
+      "price": "20050",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "47",
+      "jewelName": "Stunning Bracelet",
+      "image": "/assets/Images/Stunning Diamond Bracelet.jpeg",
+      "price": "175000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "48",
+      "jewelName": "Infinity Bracelet",
+      "image": "/assets/Images/Infinity Bracelet Diamonds.jpeg",
+      "price": "190000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "49",
+      "jewelName": "Infinity Bracelet",
+      "image": "/assets/Images/Infinity Bracelet.jpeg",
+      "price": "100000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "50",
+      "jewelName": "Circle Crystal Bracelet",
+      "image": "/assets/Images/Rose Gold Crystals Bracelet.jpeg",
+      "price": "200000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Diamond"
+    }
+  ],
+  "kids": [
+    {
+      "id": "51",
+      "jewelName": "Pearl Earrings",
+      "image": "/assets/Images/top women jewelry on amazon.jpeg",
+      "price": "10000",
+      "purity": "91.6",
+      "weight": "1.500 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "52",
+      "jewelName": "Latest Butterfly Chain with Bracelet",
+      "image": "/assets/Images/2023 Latest Chinese Jewelry Designs _ Trending Crafts Jewelry Designs.jpeg",
+      "price": "32000",
+      "purity": "91.6",
+      "weight": "4.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "53",
+      "jewelName": "Butterfly Cuff Ring",
+      "image": "/assets/Images/Butterfly Decor Cuff Ring.jpeg",
+      "price": "21000",
+      "purity": "91.6",
+      "weight": "3.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "54",
+      "jewelName": "Kids Rings",
+      "image": "/assets/Images/Kids Rings.jpeg",
+      "price": "63000",
+      "purity": "91.6",
+      "weight": "9.000 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "55",
+      "jewelName": "Fancy Bracelet",
+      "image": "/assets/Images/Limited Amazon_com Offers For Our Fans __ Jewelry Gift Ideas.jpeg",
+      "price": "35000",
+      "purity": "91.6",
+      "weight": "7.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "56",
+      "jewelName": "Pressed Flower Necklace",
+      "image": "/assets/Images/Pressed Flower Necklace.jpeg",
+      "price": "1000",
+      "purity": "91.6",
+      "weight": "3.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "57",
+      "jewelName": "Butterfly Bracelet",
+      "image": "/assets/Images/bracelets.jpeg",
+      "price": "35000",
+      "purity": "91.6",
+      "weight": "5.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "58",
+      "jewelName": "Butterfly Earrings",
+      "image": "/assets/Images/• @BabyGirl •.jpeg",
+      "price": "40000",
+      "purity": "91.6",
+      "weight": "8.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "59",
+      "jewelName": "Simple Studs",
+      "image": "/assets/Images/Gold Earings And Stud _ Party Wear Earrings _ Gold Ear Studs Designs _ Gold Studs Designs.jpeg",
+      "price": "21000",
+      "purity": "91.6",
+      "weight": "3.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "60",
+      "jewelName": "Light weight kids set",
+      "image": "/assets/Images/light weight gold necklace under 10 grams,light weight gold necklace,light weight necklace.jpeg",
+      "price": "35000",
+      "purity": "91.6",
+      "weight": "5.00 g",
+      "metal": "Diamond"
+    },
+    {
+      "id": "61",
+      "jewelName": "Gold Bead Bracelet",
+      "image": "/assets/Images/24K 4pcs Ethnic Bead Gold Color Dubai Bangles For Baby Girls  Bracelet Women.jpeg",
+      "price": "80000",
+      "purity": "91.6",
+      "weight": "10.000 g",
+      "metal": "Diamond"
+    }
+  ],
+  "gifts": [
+    {
+      "id": "62",
+      "jewelName": "Butterfly Chain",
+      "image": "/assets/Images/2pcs Butterfly Charm Necklace.jpeg",
+      "price": "32000",
+      "purity": "91.6",
+      "weight": "4.00 g",
+      "type": "gift"
+    },
+    {
+      "id": "63",
+      "jewelName": "Ganapathy Statue",
+      "image": "/assets/Images/India Home Pooja Item Puja Ganesha Statue - Indian Ganesh Ganpati Wedding Party Arts Presents - Hindu Home Mandir Diwali Decoration.jpeg",
+      "price": "700000",
+      "purity": "91.6",
+      "weight": "100.000 g",
+      "type": "coins"
+    },
+    {
+      "id": "64",
+      "jewelName": "Sunshine Bracelet",
+      "image": "/assets/Images/You are my Sunshine Bracelet, Sunshine Jewelry Gift, Sunshine Jewelry for Kids, Gift for Daughter, G.jpeg",
+      "price": "40000",
+      "purity": "91.6",
+      "weight": "5.00 g"
+    },
+    {
+      "id": "65",
+      "jewelName": "Lotus Pendant Chain",
+      "image": "/assets/Images/Lotus pendant with two-tone 14k Rose Gold and Sterling Silver combinations_.jpeg",
+      "price": "40000",
+      "purity": "91.6",
+      "weight": "5.00 g"
+    },
+    {
+      "id": "66",
+      "jewelName": "Bracelet Bangles",
+      "image": "/assets/Images/Bracelets Bangles.jpeg",
+      "price": "40000",
+      "purity": "91.6",
+      "weight": "5.00 g"
+    },
+    {
+      "id": "67",
+      "jewelName": "Daisy Flower Chain",
+      "image": "/assets/Images/Daisy Chain Necklace.jpeg",
+      "price": "21000",
+      "purity": "91.6",
+      "weight": "3.00 g"
+    },
+    {
+      "id": "68",
+      "jewelName": "Chain and Earrings",
+      "image": "/assets/Images/best-bridal-jewelry-brands.png",
+      "price": "28000",
+      "purity": "91.6",
+      "weight": "4.00 g"
+    },
+    {
+      "id": "69",
+      "jewelName": "Bracelet Bangles",
+      "image": "/assets/Images/jewel.jpeg",
+      "price": "26000",
+      "purity": "91.6",
+      "weight": "4.00 g"
+    },
+    {
+      "id": "70",
+      "jewelName": "Couple Chain ",
+      "image": "/assets/Images/Monogram Necklace _ Etsy.jpeg",
+      "price": "45000",
+      "purity": "91.6",
+      "weight": "6.00 g"
+    },
+    {
+      "id": "71",
+      "jewelName": "Hanuman Statue",
+      "image": "/assets/Images/_925 silver handmade Lord hanuman 1_5__ small statue, best puja or gifting god hanuman statue sculpture home temple puja art, utensils art124_.jpeg",
+      "price": "4000",
+      "purity": "91.6",
+      "weight": "50.00 g"
+    },
+    {
+      "id": "72",
+      "jewelName": "Krishna Statue",
+      "image": "/assets/Images/Golden Brass Bal Gopal Krishna Statue having Makhan.jpeg",
+      "price": "800000",
+      "purity": "91.6",
+      "weight": "150.000 g"
+    }
+  ],
+  "mens": [
+    {
+      "id": "73",
+      "jewelName": "Dragon Designed Bracelet",
+      "image": "/assets/Images/Silver Jewelry Designs To Keep You Enthralled - Bored Art.jpeg",
+      "price": "10500",
+      "purity": "91.6",
+      "weight": "50.000 g"
+    },
+    {
+      "id": "74",
+      "jewelName": "Rolex Style Bracelet",
+      "image": "/assets/Images/18k Rolex style bracelet with 3 diamonds.jpeg",
+      "price": "110000",
+      "purity": "91.6",
+      "weight": "16.000 g"
+    },
+    {
+      "id": "75",
+      "jewelName": "Sachin Chain",
+      "image": "/assets/Images/Hip Hop Jewelry _ Cuban Links, Tennis Chains _ The Jewelry Plug.jpeg",
+      "price": "160000",
+      "purity": "91.6",
+      "weight": "24.000 g"
+    },
+    {
+      "id": "76",
+      "jewelName": "Gold Plated Rolex Watch",
+      "image": "/assets/Images/Buy Classic Luxury Branded Watches Rolex Rado Armani.jpeg",
+      "price": "500000",
+      "purity": "91.6",
+      "weight": "64.000 g"
+    },
+    {
+      "id": "77",
+      "jewelName": "Simple Cuff Bracelet",
+      "image": "/assets/Images/Beautiful 925 Silver Twist Mesh Cuff Bracelet Bangle Adjustable.jpeg",
+      "price": "5000",
+      "purity": "91.6",
+      "weight": "15.000 g"
+    },
+    {
+      "id": "78",
+      "jewelName": "Lion Men's Ring",
+      "image": "/assets/Images/Juwelry Design in Gold and Silver, with Diamonds, Opal, and Rubies_.jpeg",
+      "price": "90000",
+      "purity": "91.6",
+      "weight": "16.00 g"
+    },
+    {
+      "id": "79",
+      "jewelName": "Adjustable Bracelet",
+      "image": "/assets/Images/download (11).jpeg",
+      "price": "150000",
+      "purity": "91.6",
+      "weight": "20.000 g"
+    },
+    {
+      "id": "80",
+      "jewelName": "Gold Plated Chain",
+      "image": "/assets/Images/Men's Chunky Curb Chain Necklace 18ct Gold Plated.jpeg",
+      "price": "300000",
+      "purity": "91.6",
+      "weight": "40.000 g"
+    },
+    {
+      "id": "81",
+      "jewelName": "Men's Diamond Ring",
+      "image": "/assets/Images/Men's Diamond Ring, Men's Wedding Ring, 2_9 Ct Diamond Ring, 14K Yellow Gold Plated, Men's Pave Set Ring, Anniversary Gift, Handmade Jewelry.jpeg",
+      "price": "70000",
+      "purity": "91.6",
+      "weight": "14.000 g"
+    }
+  ],
+  "goldring": [
+    {
+      "id": "82",
+      "jewelName": "Dainty V Ring",
+      "image": "/assets/Images/Ring Design Modren __ ring aesthetics.jpeg",
+      "price": "27500",
+      "purity": "91.6",
+      "weight": "4.03 g",
+      "metal": "Gold"
+    },
+    {
+      "id": "83",
+      "jewelName": "Crystal Stone Ring",
+      "image": "/assets/Images/rings2.jpg",
+      "price": "34300",
+      "purity": "91.6",
+      "weight": "5.00 g",
+      "metal": "Gold"
+    },
+    {
+      "id": "84",
+      "jewelName": "Birch Leaf Ring",
+      "image": "/assets/Images/Birch Leaf Wedding Band in 18k yellow gold!.jpeg",
+      "price": "41200",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Gold"
+    },
+    {
+      "id": "85",
+      "jewelName": "Adjustable Ring",
+      "image": "/assets/Images/Lulu Dainty Twist Adjustable Ring in Rose Gold.jpeg",
+      "price": "10500",
+      "purity": "91.6",
+      "weight": "1.500 g",
+      "metal": "Gold"
+    },
+    {
+      "id": "86",
+      "jewelName": "Lotus Flower Ring",
+      "image": "/assets/Images/Vintage Lotus Flower Rings For Women Gold Sliver Color Moon Sun Opal Ring Couple Wedding Stainless Steel Ring Femme Jewelry Gift.jpeg",
+      "price": "20700",
+      "purity": "91.6",
+      "weight": "3.00 g",
+      "metal": "Gold"
+    }
+  ],
+  "goldchain": [
+    {
+      "id": "87",
+      "jewelName": "Antique Gold Necklace",
+      "image": "/assets/Images/WhatsApp Image 2023-01-28 at 20.29.26.jpg",
+      "price": "307000",
+      "purity": "91.6",
+      "weight": "45.00 g",
+      "metal": "Gold"
+    },
+    {
+      "id": "88",
+      "jewelName": "Antique Long Necklace Set",
+      "image": "/assets/Images/img11.jpg",
+      "price": "653500",
+      "purity": "91.6",
+      "weight": "96.00 g",
+      "metal": "Gold"
+    },
+    {
+      "id": "89",
+      "jewelName": "Long Haram",
+      "image": "/assets/Images/img3.jpg",
+      "price": "653500",
+      "purity": "91.6",
+      "weight": "96.00 g",
+      "metal": "Gold"
+    },
+    {
+      "id": "90",
+      "jewelName": "Elegant Floral Necklace",
+      "image": "/assets/Images/strings-attached-bracelet.jpg",
+      "price": "307000",
+      "purity": "91.6",
+      "weight": "45.00 g",
+      "metal": "Gold"
+    },
+    {
+      "id": "91",
+      "jewelName": "Temple Design Chain",
+      "image": "/assets/Images/11.jpg",
+      "price": "437200",
+      "purity": "91.6",
+      "weight": "64.00 g",
+      "metal": "Gold"
+    }
+  ],
+  "goldearring": [
+    {
+      "id": "92",
+      "jewelName": "Pretty Butterfly Stud",
+      "image": "/assets/Images/2.jpg",
+      "price": "41200",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Gold"
+    },
+    {
+      "id": "93",
+      "jewelName": "Fancy Jhumka",
+      "image": "/assets/Images/17.jpg",
+      "price": "110000",
+      "purity": "91.6",
+      "weight": "16.00 g",
+      "metal": "Gold"
+    },
+    {
+      "id": "94",
+      "jewelName": "Peacock Jhumka",
+      "image": "/assets/Images/70c373fe0abc420d5119035a56636b07.jpg",
+      "price": "110000",
+      "purity": "91.6",
+      "weight": "16.00 g",
+      "metal": "Gold"
+    },
+    {
+      "id": "95",
+      "jewelName": "Big Antique Jhumka",
+      "image": "/assets/Images/joeyy-lee-hXhMzWysB8s-unsplash-2048x1645.jpg",
+      "price": "110000",
+      "purity": "91.6",
+      "weight": "16.00 g",
+      "metal": "Gold"
+    },
+    {
+      "id": "96",
+      "jewelName": "Matte Peacock Jhumka",
+      "image": "/assets/Images/12.jpg",
+      "price": "85000",
+      "purity": "91.6",
+      "weight": "10.00 g",
+      "metal": "Gold"
+    }
+  ],
+  "goldbangles": [
+    {
+      "id": "97",
+      "jewelName": "Gold Floral Bangle",
+      "image": "/assets/Images/bangles.jpg",
+      "price": "310000",
+      "purity": "91.6",
+      "weight": "48.00 g",
+      "metal": "Gold"
+    },
+    {
+      "id": "98",
+      "jewelName": "Temple Work Emboss Bangle",
+      "image": "/assets/Images/bangles1.jpg",
+      "price": "437500",
+      "purity": "91.6",
+      "weight": "64.00 g",
+      "metal": "Gold"
+    },
+    {
+      "id": "99",
+      "jewelName": "Daily Wear Bangles",
+      "image": "/assets/Images/bangles5.jpeg",
+      "price": "150000",
+      "purity": "91.6",
+      "weight": "24.00 g",
+      "metal": "Gold"
+    },
+    {
+      "id": "100",
+      "jewelName": "Antique Temple Work",
+      "image": "/assets/Images/bangles4.jpeg",
+      "price": "550000",
+      "purity": "91.6",
+      "weight": "80.00 g",
+      "metal": "Gold"
+    },
+    {
+      "id": "101",
+      "jewelName": "Designer Bangles",
+      "image": "/assets/Images/bangles3.jpeg",
+      "price": "310000",
+      "purity": "91.6",
+      "weight": "48.00 g",
+      "metal": "Gold"
+    }
+  ],
+  "goldbracelet": [
+    {
+      "id": "102",
+      "jewelName": "Leaf Handlet",
+      "image": "/assets/Images/bracelet1.jpeg",
+      "price": "50000",
+      "purity": "91.6",
+      "weight": "8.00 g",
+      "metal": "Gold"
+    },
+    {
+      "id": "103",
+      "jewelName": "Fishbone Bracelet",
+      "image": "/assets/Images/bracelet2.jpeg",
+      "price": "57000",
+      "purity": "91.6",
+      "weight": "9.00 g",
+      "metal": "Gold"
+    },
+    {
+      "id": "104",
+      "jewelName": "Glamourous Shine Two Tone",
+      "image": "/assets/Images/bracelet3.jpeg",
+      "price": "64000",
+      "purity": "91.6",
+      "weight": "10.00 g",
+      "metal": "Gold"
+    },
+    {
+      "jewelName": "Women's Bead Bracelet",
+      "id": "105",
+      "image": "/assets/Images/bracelet4.jpeg",
+      "price": "64000",
+      "purity": "91.6",
+      "weight": "10.00 g",
+      "metal": "Gold"
+    },
+    {
+      "id": "106",
+      "jewelName": "Trendy Green Crystal",
+      "image": "/assets/Images/bracelet5.jpeg",
+      "price": "40000",
+      "purity": "91.6",
+      "weight": "6.00 g",
+      "metal": "Gold"
+    }
+  ],
+  "silvercoins": [
+    {
+      "id": "107",
+      "jewelName": "Temple Design Chain",
+      "image": "/assets/Images/Laxmi 100 grams Pure Silver Round Coin- 999 Purity.jpeg",
+      "price": "1000",
+      "purity": "91.6",
+      "weight": "5.00 g",
+      "type": "gift"
+    },
+    {
+      "id": "108",
+      "jewelName": "Temple Design Chain",
+      "image": "/assets/Images/Send Diwali Gifts to India _ Buy Diwali Gifts Online _ Gifts2IndiaOnline.jpeg",
+      "price": "1500",
+      "purity": "91.6",
+      "weight": "10.00 g",
+      "type": "coins"
+    },
+    {
+      "id": "109",
+      "jewelName": "Temple Design Chain",
+      "image": "/assets/Images/coins1.jpeg",
+      "price": "3000",
+      "purity": "91.6",
+      "weight": "20.00 g"
+    },
+    {
+      "id": "110",
+      "jewelName": "Temple Design Chain",
+      "image": "/assets/Images/coin-front-side.jpg",
+      "price": "500",
+      "purity": "91.6",
+      "weight": "5.00 g"
+    }
+  ],
+  "goldcoins": [
+    {
+      "id": "111",
+      "jewelName": "Temple Design Chain",
+      "image": "/assets/Images/coin.jpeg",
+      "price": "112000",
+      "purity": "91.6",
+      "weight": "16.00 g"
+    },
+    {
+      "id": "112",
+      "jewelName": "Temple Design Chain",
+      "image": "/assets/Images/download (13).jpeg",
+      "price": "112000",
+      "purity": "91.6",
+      "weight": "16.00 g"
+    },
+    {
+      "id": "113",
+      "jewelName": "Temple Design Chain",
+      "image": "/assets/Images/2gm-ganesha-gold-f-470x470.png",
+      "price": "55000",
+      "purity": "91.6",
+      "weight": "8.00 g"
+    },
+    {
+      "id": "114",
+      "jewelName": "Temple Design Chain",
+      "image": "/assets/Images/Gold Baby___.jpeg",
+      "price": "112000",
+      "purity": "91.6",
+      "weight": "16.00 g"
+    },
+    {
+      "id": "115",
+      "jewelName": "Temple Design Chain",
+      "image": "/assets/Images/Muthoot Precious Metals Corporation 24k (999) Lord Krishna 8 gm Yellow Gold Coin.jpeg",
+      "price": "115000",
+      "purity": "91.6",
+      "weight": "6.500 g"
+    },
+    {
+      "id": "116",
+      "jewelName": "Temple Design Chain",
+      "image": "/assets/Images/Online Fashion & Lifestyle Shopping for Women, Men & Kids in India - Tata CLiQ.jpeg",
+      "price": "55000",
+      "purity": "91.6",
+      "weight": "8.000 g"
+    },
+    {
+      "id": "117",
+      "jewelName": "Temple Design Chain",
+      "image": "/assets/Images/ganesha-gold-coin-lakshmi-png-favpng-7Q9MQefN3biJ0gBJQLkgNwgc7.jpg",
+      "price": "280000",
+      "purity": "91.6",
+      "weight": "40.000 g"
+    }
+  ],
+  "orders": [
+    {
+      "id": "c7b6",
+      "fullName": "pooja123",
+      "email": "2k19cse033@kiot.ac.in",
+      "phoneNumber": "9566442070",
+      "address": "117,118 PL Gopal Street, Ponnammapet, Salem",
+      "state": "Tamil Nadu",
+      "zipCode": "636001",
+      "orderItems": [
+        {
+          "image": "/assets/Images/img11.jpg",
+          "jewelName": "Antique Long Necklace Set",
+          "jewelRate": "653500",
+          "metal": "Gold"
+        }
+      ],
+      "userEmail": "kavitha@gmail.com"
     }
   ]
 }

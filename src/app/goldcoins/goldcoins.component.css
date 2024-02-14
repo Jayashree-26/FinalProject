@@ -1,0 +1,497 @@
+/* navigation bar */
+.container {
+  background-color: #eee4e1;
+  font-size: 25px;
+  font-family: "Cormorant Unicase", sans-serif;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  box-shadow: 0px 15px 20px #5a4441;
+}
+
+.product-img img {
+  width: 230px; /* Set the desired width */
+  height: 250px; /* Set the desired height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  margin-left: -30%;
+}
+
+.badge {
+  padding: 5px;
+  border-radius: 50%;
+  top: 28px;
+  position: absolute;
+}
+.shopping-bag {
+  border: none;
+  background-color: transparent;
+  margin-left: 20%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+.body {
+  font-family: sans-serif;
+  background-color: #eee4e1;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-wrapper ul.nav-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.nav-wrapper ul.nav-list li {
+  margin-left: 30px;
+  padding: 20px 0;
+  position: relative;
+}
+
+.nav-wrapper ul.nav-list li a {
+  color: #5a4441;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn {
+  background-color: #5a4441;
+  color: #eee4e1;
+  text-decoration: none;
+  outline: none;
+  padding: 8px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border: 1px solid transparent;
+}
+
+.btn:hover {
+  background-color: #5a4441;
+  border: 1px solid transparent;
+}
+
+.brand {
+  z-index: 9999;
+}
+
+.ul.nav-list.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav-list .products {
+  scroll-behavior: smooth;
+  cursor: pointer;
+}
+
+.ul.nav-list li a {
+  font-size: 20px;
+}
+
+.ul.nav-list li {
+  margin-left: 0;
+  text-align: center;
+}
+
+.badge {
+  padding: 5px;
+  border-radius: 50%;
+  top: 20px;
+  position: absolute;
+}
+
+.shopping-bag {
+  border: none;
+  background-color: transparent;
+}
+
+/* img {
+  width: 100%;
+  display: block;
+} */
+
+.containers {
+  width: 88vw;
+  margin: 0 auto;
+}
+
+.lg-title,
+.md-title,
+.sm-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0.6rem 0;
+  text-transform: capitalize;
+  color: #5a4441;
+  text-transform: uppercase;
+}
+
+.lg-title {
+  font-family: "Bitter";
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  padding: 1.3rem 0;
+  opacity: 0.9;
+}
+
+.sm-title {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+/*
+.md-title {
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
+
+.text {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0.4rem 0;
+  color: #5a4441;
+}
+
+.product {
+  padding: 3.2rem 0;
+}
+
+.product .text {
+  text-align: center;
+  width: 70%;
+  margin: 0.9rem auto;
+}
+
+.product1 {
+  margin: 2rem;
+  position: relative;
+}
+
+.product-content {
+  padding: 3rem 0.5rem 2rem 0.5rem;
+  cursor: pointer;
+}
+
+.product-img {
+  /* box-shadow: 0 0 20px 10px; */
+  width: 50%;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.product-btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  border-radius: 20px;
+  font-family: "Cormorant Unicase", sans-serif;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.btn-cart,
+.btn-buy {
+  background: transparent;
+  border: 1px solid #5a4441;
+  padding: 0.8rem 0;
+  width: 125px;
+  font-family: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  transition: all 0.6s ease;
+}
+
+.btn-cart {
+  background-color: #5a4441;
+  color: #eee4e1;
+}
+
+.btn-cart:hover {
+  color: #5a4441;
+  background-color: #eee4e1;
+}
+
+.btn-buy {
+  background-color: #5a4441;
+  color: #eee4e1;
+}
+.btn-buy:hover {
+  color: #5a4441;
+  background-color: #eee4e1;
+}
+
+.product-info {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.product-info-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating span {
+  color: #5a4441;
+}
+
+.product-name {
+  color: #5a4441;
+  display: block;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.product-price {
+  color: #5a4441;
+  padding-top: 0.6rem;
+  padding-right: 0.6rem;
+  display: inline-block;
+}
+
+/* .product-price:first-of-type {
+  text-decoration: line-through;
+  color: #5a4441;
+} */
+
+/* .product-img img{
+    transition: transform 0.6s ease;
+  } */
+
+/* .product:hover .product-img img{
+    transform: scale(1.1);
+  } */
+
+.product:hover .product-btns {
+  opacity: 1;
+}
+
+.off-info .sm-title {
+  background-color: #5a4441;
+  color: #eee4e1;
+  display: inline-block;
+  padding: 0.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  z-index: 1;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.product-collection {
+  padding: 3.2rem 0;
+}
+
+.product-collection-wrapper {
+  padding: 3.2rem 0;
+}
+
+.product-col-left {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+    url(/APPLICATION/IMAGES/silverpendant.jpg) center/cover no-repeat;
+}
+
+.product-col-r-top {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+    url(/APPLICATION/IMAGES/silverpendant.jpg) center/cover no-repeat;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 50vh;
+  padding: 2rem 1.5rem 3.2rem;
+  margin: 5px;
+}
+
+.product-col-r-bottom > div:first-child {
+  background-color: cadetblue;
+}
+.product-col-r-bottom > div:last-child {
+  background-color: darkgreen;
+}
+
+.product-col-column {
+  text-align: center;
+  color: white;
+}
+
+.product-collection .text-light {
+  opacity: 1;
+  font-size: 0.8;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.btn-dark {
+  background-color: black;
+  color: white;
+  outline: 0;
+  border-radius: 25px;
+  padding: 0.7rem 1rem;
+  border: 0;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 0.6s ease;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.btn-dark:hover {
+  background-color: brown;
+}
+
+@media screen and (min-width: 992px) {
+  .product-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product-col-r-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .products {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .product1 .text-light {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1336px) {
+  .product-items {
+    /* display: grid; */
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .product-collection-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .flex {
+    height: 60vh;
+  }
+  .product-col-left {
+    height: 121.5vh;
+  }
+}
+
+.title1 {
+  font-size: 40px;
+  font-family: "Bitter";
+  font-weight: 100;
+  color: #5a4441;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+hr {
+  border: 1px solid #000000;
+  margin-bottom: 10px;
+  margin-left: 32%;
+}
+
+.h1 {
+  font-family: poppins;
+  color: #04aa6d;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 90px;
+  padding-top: 0px;
+  background-color: #eee4e1;
+  color: #5a4441;
+  font-family: "Cormorant Unicase", sans-serif;
+
+}
+
+.design{
+  padding-top: 10px;
+}
+
+.img1 {
+  flex: 2;
+  padding: 20px;
+  font-size: 20px;
+  margin: 5px;
+  font-family: "Cormorant Unicase", sans-serif;
+  text-align: center;
+
+}
+
+.img2 {
+  flex: 2;
+  padding: 20px;
+  font-size: 20px;
+  margin: 5px;
+  font-family: "Cormorant Unicase", sans-serif;
+  text-align: center;
+}
+
+.wrapper img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(0.9);
+  transition: 1s ease;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.img1 a {
+  background-color: #5a4441;
+  color: white;
+  padding: 15px 10px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin: 35px 10px;
+}
+
+.img2 a {
+  background-color: #5a4441;
+  color: white;
+  padding: 15px 10px;
+  display: block;
+  margin: 35px 30px;
+  text-align: center;
+  text-decoration: none;
+}

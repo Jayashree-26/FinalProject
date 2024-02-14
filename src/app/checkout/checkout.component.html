@@ -1,0 +1,42 @@
+<app-Header></app-Header>
+
+<section class="order">
+  <h1>Order Details</h1>
+</section>
+
+<section class="sec">
+  <div class="products">
+    <div class="card" *ngFor="let product of products">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-4">
+            <!-- Product image -->
+            <img [src]="product.image" alt="Product Image" class="product-image" />
+          </div>
+          <div class="col-md-8">
+            <!-- Product details -->
+            <h2>{{ product.name }}</h2>
+            <p>Size: {{ product.size }}</p>
+            <p>Price: ₹{{ product.price }}</p>
+            <div class="quantity-buttons">
+              <button (click)="minus(product)" class="quantity-button"><i class="fas fa-minus"></i></button>
+              <span class="quantity">{{ product.quantity }}</span>
+              <button (click)="plus(product)" class="quantity-button"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="price">Total: ₹{{ product.price * product.quantity }}</div>
+            <div class="action-buttons">
+              <button routerLink="/buy" class="btn">Order Now</button>&nbsp;
+              <a routerLink="/" class="btn">Cancel Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div *ngIf="!products.length">
+    <p>No product details available.</p>
+  </div> -->
+</section>
+
+<app-footer></app-footer>

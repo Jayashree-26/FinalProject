@@ -1,0 +1,89 @@
+/* Add this CSS to your myorders.component.css or your global styles.css */
+*{
+  font-family: "Cormorant Unicase", sans-serif;
+  color: #5a4441;
+  /* background-color: #eee4e1; */
+}
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  /* background-color: #eee4e1; */
+}
+
+.order-table th,
+.order-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.order-table th {
+  /* background-color: #f2f2f2; */
+  font-size: 20px;
+}
+.order-table td {
+  /* background-color: #f2f2f2; */
+  font-size: 15px;
+}
+
+
+.order-table img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.cancel-order {
+  background-color: #5a4441;
+  color: #eee4e1;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+/* Style the image */
+.no-order-image {
+  width: 10%;
+  height: 10%;
+  margin-top: 110px;
+  margin-left:600px;
+}
+
+.no-order-message {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  padding: 20px;
+  /* background-color: #fff; */
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  margin: 5px auto;
+  max-width: 1000px;
+}
+
+.btn {
+  background-color: #5a4441;
+  color: #eee4e1;
+  text-decoration: none;
+  outline: none;
+  padding: 8px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border: 1px solid transparent;
+  margin-left: 690px;
+  /* margin-top: 20px !important; */
+  border-color: transparent;
+  border-radius: 50px !important;
+}
+
+.btn:hover {
+  background-color: #5a4441;
+  border: 1px solid transparent;
+}
+

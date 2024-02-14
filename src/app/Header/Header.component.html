@@ -2,19 +2,32 @@
   <div class="container nav-wrapper">
     <div class="brand">
       <img src="/assets/Images/Frame 1 (5).png" style="height:7vh;">
-      <span><strong
-          style="font-size: 37px; color:#5a4441; font-family: 'Cormorant Unicase', sans-serif; cursor: pointer;"
-          routerLink="/home">Mini</strong></span>
+      <span>
+        <strong style="font-size: 37px; color:#5a4441; font-family: 'Cormorant Unicase', sans-serif; cursor: pointer;"
+          routerLink="">Mini</strong>
+      </span>
     </div>
     <ul class="nav-list">
       <li class="active">
-        <a routerLink="/home">HOME</a>
+        <a routerLink="">HOME</a>
       </li>
       <li class="products">
-        <a (click)="toProducts()">PRODUCTS</a>
+        <a (click)="toProducts()" routerLink="">PRODUCTS</a>
       </li>
       <li>
-        <button class="btn btn-primary" routerLink="/login">LOGIN</button>
+        <button class="btn btn-primary" routerLink="/login" *ngIf="!authService.isLoggedIn()">LOGIN</button>
+        <button class="btn btn-primary" (click)="logout()" *ngIf="authService.isLoggedIn()">LOGOUT</button>
+        &nbsp;&nbsp;&nbsp;
+        <button style="background-color:transparent ; color: #5a4441;" routerLink="/addtocart" class="shopping-bag">
+          <i style="font-size:20px;" class="fa fa-shopping-bag"></i>
+          <div style="font-size:12px; padding:3px;" class="badge bg-danger">{{cartItemCount}}</div>
+        </button>&nbsp;&nbsp;
+        <button style="background-color: transparent; color: #5a4441; border: none;" routerLink="/myorders">
+          <i style="font-size: 20px; padding: 3px;" class="fa fa-shopping-basket"></i>
+        </button>&nbsp;&nbsp;
+        <div class="fas fa-user-initial" *ngIf="authService.isLoggedIn()">
+          <span class="user-initial">{{ getUserInitial() }}</span>
+        </div>
       </li>
     </ul>
   </div>

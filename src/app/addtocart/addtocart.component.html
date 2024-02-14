@@ -1,0 +1,81 @@
+<body style="background-color: #eee4e1;">
+  <app-Header></app-Header>
+  <ng-container *ngIf="products.length!=0">
+    <div class="container">
+      <div class="card-table" style="position:absolute; top: 20%; ">
+        <div class="cart-product">
+          <table class="table table-responsive">
+            <thead>
+              <tr>
+                <th>Sr.no</th>
+                <th>Product Name</th>
+                <th>Product Image</th>
+                <th>Size</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of products; let i=index">
+                <td>{{i+1}}</td>
+                <td>{{item.name}}</td>
+                <td><img style="width:50px; height: 50px;" src="{{item.image}}"></td>
+                <td>{{item.size}}</td>
+                <th>{{item.price}}</th>
+                <td>
+                  <button (click)="minus(item)" class="indec-button1"><i class="fa fa-minus"> </i></button>
+                  <span class="quantity"> {{item.quantity}} </span>
+                  <button (click)="plus(item)" class="indec-button"><i class="fa fa-plus"> </i></button>
+                </td>
+                <td style="width:12%;">{{item.quantity*item.price}}</td>
+                <td>
+                  <button (click)="removeItem(item)" class="btn btn-danger" id="action">Delete</button>&nbsp;
+                  <!-- <button (click)="buynow(item)" class="btn btn-danger" id="action">Order</button> -->
+                  <button class="btn btn-danger" id="action"  [routerLink]="['/productdetails',item.id]" [queryParams]="{
+                          id: item.id,
+                          image: item.image,
+                          jewelName: item.jewelName,
+                          jewelRate: item.price,
+                          jewelDescription: item.description,
+                          purity: item.purity,
+                          weight: item.weight,
+                          metal: item.metal
+                        }"> View Details
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="5"></td>
+                <td (click)="emptycart()"><button class="btn btn-primary" id="action1"
+                    style="background-color: #5a4441; color:#eee4e1;border-color: transparent;">Empty Cart</button></td>
+                <td routerLink="/"><button class="btn btn-primary" id="action1"
+                    style="background-color: #5a4441; color:#eee4e1;border-color: transparent;">Shop More</button></td>
+                <!-- <td><button class="btn btn-primary" id="action1" [routerLink]="['/productdetails',item.id]"
+                    style="background-color: #5a4441; color:#eee4e1;border-color: transparent;">Check out</button></td> -->
+                <td><strong>Grand Total:₹{{total}}</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </ng-container>
+  <ng-container *ngIf="products.length===0">
+    <div class="container">
+      <!-- <div class="card" style="background-color: #eee4e1; border-color: transparent;">
+      <h5 style="padding-bottom: 20px;"class="card-title">My cart</h5>
+      </div> -->
+      <div class="center" style="margin-top: 15%;">
+        <img src="/assets/Images/emptycart3.png" alt="">
+        <h4>Your cart is empty!</h4>
+        <h6>Looks like you haven't added anything to your cart yet..!</h6>
+        <button style="margin-top:-20px; font-family: 'Cormorant Unicase', sans-serif;" routerLink="/"
+          class="btn btn-primary">Go Home</button>
+      </div>
+    </div>
+  </ng-container>
+  <!-- <app-footer></app-footer> -->
+</body>

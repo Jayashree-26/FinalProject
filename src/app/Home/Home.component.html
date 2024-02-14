@@ -1,40 +1,49 @@
 <body>
-
-  <!-- header section -->
   <app-Header></app-Header>
 
+  <div class="scrolling-text-container">
+    <div class="scrolling-text">
+      <span><a (click)="toProducts()" style="margin-left: 4.5%;">Gold</a></span>&nbsp;
+      <span><a (click)="toProducts()">Silver</a></span>&nbsp;
+      <span><a (click)="toProducts()">Diamond</a></span>&nbsp;
+      <span routerLink="/giftandcoins">Gifts & Coins</span>&nbsp;
+      <span routerLink="/savescheme">Saving Scheme </span>
+    </div>
+  </div>
+
   <div class="title">
-    <p style="margin-left: 10%;margin-top: 5%;">THE JEWEL GALLERY</p>
+    <p style="margin-left: 10%;margin-top: 2%;">THE JEWEL GALLERY</p>
+    <hr style="width:42%; margin-left: 10.5%; border: 1px solid;  border-color:#5a4441;">
     <div class="content">
       <p>Jewellery is not just an accessory, It's a statement piece that reflects your personality and style....!
       </p>
-      <button type="submit" class="btn btn-primary"><a routerLink="/register"
-          style="background-color:#5a4441; font-size: 25px; color:#eee4e1; border:none; text-decoration: none;">Register
-          Now...!</a></button>
-
+      <button type="submit" class="btn btn-primary"><a (click)="toProducts()"
+          style="background-color:#5a4441; font-size: 25px; color:#eee4e1; border:none; text-decoration: none;">Own your
+          sparkle</a></button>
       <img src="/assets/Images/e87751166c0193ee29447e667ce19331.jpg">
     </div>
   </div>
+
   <br><br><br><br>
   <h1 class="title1" id="products">OUR PRODUCTS</h1>
   <hr style="width: 35%; border: 1px solid;  border-color:#5a4441;">
   <div class="wrapper">
     <div class="img1">
       <h3 style="font-family:'Cormorant Unicase', sans-serif; font-size: 25px;">Gold
-        Collections</h3><img class="design" src="/assets/Images/6.jpg" width="80%" height="400px" /><br><br>$70000<a
-        routerLink="/gold">Get it now</a>
+        Collections</h3><img class="design" src="/assets/Images/6.jpg" width="80%" height="400px" /><br><br>$70000
+      <br>Today's Rate: 24K - {{ jewelRates['gold'] }}/1g <a routerLink="/gold">Get it now</a>
     </div>
     <div class="img2">
       <h3 style="font-family:'Cormorant Unicase', sans-serif; font-size: 25px;">Silver
         Collections</h3>
-      <img class="design" src="/assets/Images/img7.jpg" width="90%" height="400px" /><br><br>$80000<a
-        routerLink="/silver">Get it now</a>
+      <img class="design" src="/assets/Images/img7.jpg" width="90%" height="400px" /><br><br>$80000 <br>
+      Today's Rate: {{ jewelRates['silver'] }}/1g<a routerLink="/silver">Get it now</a>
     </div>
     <div class="img3">
       <h3 style="font-family:'Cormorant Unicase', sans-serif; font-size: 25px;">Diamond
         Collections</h3>
-      <img class="design" src="/assets/Images/7.jpg" height="400px" width="90%" /><br><br>$650000<a
-        routerLink="/diamond">Get it now</a>
+      <img class="design" src="/assets/Images/7.jpg" height="400px" width="90%" /><br><br>$650000 <br>
+      Today's Rate: {{ jewelRates['diamond'] }}/1g<a routerLink="/diamond">Get it now</a>
     </div>
   </div>
 
@@ -42,11 +51,11 @@
   <hr style="width: 50%; margin-left: 25%; border: 1px solid; border-color:#5a4441;">
   <br><br>
   <div class="selection">
-    <div style="background-image:url(/assets/Images/select4.jpg);"></div>
-    <div style="background-image: url(/assets/Images/img1.jpg);"></div>
-    <div style="background-image: url(/assets/Images/select3.jpg);"></div>
-    <div style="background-image: url(/assets/Images/select1.jpg);"></div>
-    <div style="background-image: url(/assets/Images/img5.jpg);"></div>
+    <div routerLink="/goldchain" style="background-image:url(/assets/Images/select4.jpg);"></div>
+    <div routerLink="/goldchain" style="background-image: url(/assets/Images/img1.jpg);"></div>
+    <div routerLink="/goldchain" style="background-image: url(/assets/Images/select3.jpg);"></div>
+    <div routerLink="/goldchain" style="background-image: url(/assets/Images/select1.jpg);"></div>
+    <div routerLink="/goldchain" style="background-image: url(/assets/Images/img5.jpg);"></div>
   </div>
   <br><br>
 
@@ -54,15 +63,50 @@
   <hr style="width: 35%; margin-left: 32%; border: 1px solid; border-color:#5a4441;">
   <br><br>
   <section class="gallery">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+    <div routerLink="/goldearring" class="box"></div>
+    <div routerLink="/goldbracelet" class="box"></div>
+    <div routerLink="/goldearring" class="box"></div>
+    <div routerLink="/goldearring" class="box"></div>
+    <div routerLink="/diamondchain" class="box"></div>
+    <div routerLink="/goldearring" class="box"></div>
   </section>
 
-  <!-- footer section -->
+  <h1 class="t1" style="margin-top: 5%;">EXPLORE BY GENDER</h1>
+  <hr style="width: 40%; margin-left: 29%; border: 1px solid; border-color:#5a4441;">
+  <div class="wrapper1">
+    <div class="card">
+      <img src="/assets/Images/An Elegant Delhi Wedding With A Bride In A Stunning Coral Lehenga.jpeg" alt="">
+      <div class="info">
+        <h1>Women</h1>
+        <hr style="width: 50%; border: 1px solid; border-color:#eee4e1; margin-left: -1%;">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet vero exercitationem ad, minima similique
+          quod fugit fuga! Praesentium odit cum repellat deserunt. Vel, architecto quaerat voluptate corporis
+          consectetur placeat minima.</p>
+        <a (click)="toProducts()" class="btn">Explore Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/assets/Images/G-Link Chain (Silver) 5mm - 24inch_60cm _ Silver.jpeg" alt="">
+      <div class="info">
+        <h1>Men</h1>
+        <hr style="width: 50%; border: 1px solid; border-color:#eee4e1; margin-left: -1%;">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet vero exercitationem ad, minima similique
+          quod fugit fuga! Praesentium odit cum repellat deserunt. Vel, architecto quaerat voluptate corporis
+          consectetur placeat minima.</p>
+        <a routerLink="/mens" class="btn">Explore Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/assets/Images/Earring.jpeg" alt="">
+      <div class="info">
+        <h1>Kids</h1>
+        <hr style="width: 50%; border: 1px solid; border-color:#eee4e1; margin-left: -1%;">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet vero exercitationem ad, minima similique
+          quod fugit fuga! Praesentium odit cum repellat deserunt. Vel, architecto quaerat voluptate corporis
+          consectetur placeat minima.</p>
+        <a routerLink="/kids" class="btn">Explore Now</a>
+      </div>
+    </div>
+  </div>
   <app-footer></app-footer>
-
 </body>

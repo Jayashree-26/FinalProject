@@ -1,0 +1,42 @@
+<body style="background-color: #eee4e1;">
+  <app-Header></app-Header>
+  <section class="order-confirmation">
+    <h1 style="margin-left: 660px;">My Orders</h1>
+    <div *ngIf="orders.length > 0">
+      <table class="order-table">
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Image</th>
+            <th>Jewel Name</th>
+            <th>Category</th>
+            <th>Jewel Rate (₹)</th>
+            <!-- <th>Quantity</th> -->
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let order of orders">
+            <td>{{ order.id }}</td>
+            <td><img [src]="order.orderItems[0].image" alt="Product Image" /></td>
+            <td>{{ order.orderItems[0].jewelName }}</td>
+            <td>{{order.orderItems[0].metal}}</td>
+            <td>₹{{ order.orderItems[0].jewelRate }}</td>
+            <!-- <td>1</td> Assuming quantity is always 1 -->
+            <td>
+              <button class="cancel-order" (click)="cancelOrder(order.id)">Cancel Order</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div *ngIf="orders.length === 0">
+      <div class="no-order-container">
+        <img src="/assets/Images/emptycart3.png" style="margin-left: 690px;" alt="No Order Image" class="no-order-image" />
+        <h6 class="no-order-message">Looks like you haven't made your order yet..!</h6>
+        <button style="margin-top:-5px; font-family: 'Cormorant Unicase', sans-serif;" routerLink="/"
+        class="btn btn-primary">Go Home</button>
+      </div>
+    </div>
+  </section>
+</body>

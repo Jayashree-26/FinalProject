@@ -1,17 +1,16 @@
 .card {
   margin-top: 300px;
   border: none;
-  top: 53%;
+  top: 50%;
   left: 100%;
   position: absolute;
   padding: 40px;
   width: 500px;
   transform: translate(-50%, -50%);
-  background-color: #eee4e1;
-  color: #5a4441;
+  background-color: transparent;
+   color: #5a4441;
+   /* font-family: "Cormorant Unicase", sans-serif; */
 }
 
 
-.error {
-  border: 1px solid red;
-}
+

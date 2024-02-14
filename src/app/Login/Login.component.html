@@ -1,33 +1,62 @@
 <app-Header></app-Header>
-<div class="container">
+
+<div class="container login-container">
   <div class="row">
     <div class="col-md-6">
       <div class="card">
         <div class="text-center">
-          <h1>Login</h1>
+          <h1 style=" font-family: Cormorant Unicase, sans-serif;">Login</h1>
         </div>
-        <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+
+          <!-- email address -->
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1"
+            <label for="exampleInputEmail1" class="form-label"
+              style="font-family: Cormorant Unicase;font-size: 20px;">Email address</label>
+            <br>
+            <!-- <input formControlName="email" placeholder="Email" type="email" class="form-control" id="exampleInputEmail1"
               aria-describedby="emailHelp">
             <span class="text-danger"
-              *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')">*Email Id is
-              required</span>
+              *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email || username')">*Email Id is
+              required</span> -->
+
+            <input type="email"
+              style="width: 100%;color:black; border-radius: 4px; height: 30px; border-color: transparent;"
+              placeholder="Enter your registered email id" [(ngModel)]="email" formControlName="email" required>
+            <div class="error" *ngIf="loginForm.controls['email'].invalid&&loginForm.controls['email'].touched">
+              <small style="color: red; font-family: Cormorant Unicase, sans-serif; font-size: 15px;"
+                *ngIf="loginForm.controls['email'].errors?.['required']">Please enter valid Email address.</small>
+            </div>
           </div>
+
+          <!-- password -->
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+            <label for="exampleInputPassword1" class="form-label"
+              style="font-family: Cormorant Unicase;font-size: 20px;">Password</label>
+            <br>
+            <!-- <input formControlName="password" placeholder="Password" type="password" class="form-control" id="exampleInputPassword1">
             <span class="text-danger"
-              *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">Password Id is
-              required</span>
+              *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">*Password is
+              required</span> -->
+
+            <input type="password"
+              style="width: 100%;color:black; border-radius: 4px; height: 30px; border-color: transparent;"
+              placeholder="Enter password" [(ngModel)]="password" formControlName="password" required>
+            <div class="error" *ngIf="loginForm.controls['password'].invalid&&loginForm.controls['password'].touched">
+              <small style="color: red;font-family: Cormorant Unicase, sans-serif; font-size: 15px;"
+                *ngIf="loginForm.controls['password'].errors?.['required']">Please enter correct password.</small>
+            </div>
+            <!-- <a routerLink="/cp" class="fp" style="color: black;">Forgot password?</a> -->
           </div>
           <button type="submit" [disabled]="!loginForm.valid"
-            style="background-color: #5a4441; border-color: #5a4441; color: #eee4e1;" class="btn btn-primary mb-2"
-            routerLink="/login">Submit</button>
+            style="background-color: #5a4441; border-color: #5a4441; color: #eee4e1;font-family: Cormorant Unicase, sans-serif; font-size: 15px;"
+            class="btn btn-primary mb-2">Submit</button>
         </form>
-        <a style="color: #5a4441; margin-top: 10px; text-decoration: none;" routerLink="/register">New user? Click to
+        <a style="color: #5a4441; margin-top: 10px; text-decoration: none;font-family: Cormorant Unicase, sans-serif; font-size: 18px;"
+          routerLink="/register">New user? Click to
           SignUp!</a>
+          <a style="color: #5a4441; margin-top: 10px; text-decoration: none;font-family: Cormorant Unicase, sans-serif; font-size: 18px;"
+          routerLink="/forgotpassword">Forgot password?</a>
       </div>
     </div>
   </div>

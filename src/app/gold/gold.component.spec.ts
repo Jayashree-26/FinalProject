@@ -1,9 +1,8 @@
-/* tslint:disable:no-unused-variable */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
-
+import { HttpClientTestingModule } from '@angular/common/http/testing'; // Import HttpClientTestingModule
 import { GoldComponent } from './gold.component';
+import { FooterComponent } from '../footer/footer.component';
+import { HeaderComponent } from '../Header/Header.component';
 
 describe('GoldComponent', () => {
   let component: GoldComponent;
@@ -11,9 +10,9 @@ describe('GoldComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GoldComponent ]
-    })
-    .compileComponents();
+      declarations: [GoldComponent, HeaderComponent, FooterComponent],
+      imports: [HttpClientTestingModule], // Add HttpClientTestingModule to imports
+    }).compileComponents();
   }));
 
   beforeEach(() => {

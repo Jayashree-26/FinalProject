@@ -1,0 +1,142 @@
+/* product-details.component.css */
+body {
+  font-family: "Cormorant Unicase", sans-serif;
+  color: #5a4441;
+  background-color: #eee4e1;
+}
+
+.product-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.product-image img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+.product-info {
+  margin-left: 90px;
+}
+
+.product-info h2 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.product-info p {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.buy-btn {
+  padding: 10px 20px;
+  background-color: #5a4441;
+  color: #eee4e1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.question-link {
+  color: #0066cc;
+  text-decoration: none;
+  display: block;
+  margin: 10px 0;
+}
+
+span {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.details-link {
+  color: #5a4441;
+  font-size: 15px;
+  /* text-decoration: none; */
+  display: block;
+  margin-bottom: 20px;
+}
+
+.product-table {
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-bottom: 20px;
+  display: flex; /* Added to make the panels side-by-side */
+}
+
+.product-table .panel {
+  flex: 1; /* Added to make the panels take equal width */
+  margin: 0 100px; /* Added to create some space between the panels */
+}
+
+.product-table table {
+  width: 100%; /* Changed to 100% to fill the panel width */
+  border-collapse: collapse;
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid #5a4441;
+  font-size: 15px;
+  padding: 8px;
+  text-align: center;
+}
+
+.product-table th {
+  background-color: #eee4e1;
+}
+
+.product-table .table__sub__title td {
+  background-color: #eee4e1;
+  font-weight: bold;
+}
+
+.product-table .currency-first {
+  text-align: right;
+}
+
+.product-table strong {
+  font-weight: bold;
+}
+
+.left-info {
+  list-style: none;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.left-info li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
+
+.left-info li label {
+  width: 120px;
+  font-weight: bold;
+}
+
+.left-info li span {
+  flex: 2;
+}
+
+.panel-heading {
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 10%;
+}
+
+.panel-heading1 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 6%;
+  margin-top: 4%;
+}
+
+

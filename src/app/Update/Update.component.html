@@ -1,0 +1,46 @@
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-13">
+        <div class="card">
+          <h5>Update data</h5><br>
+          <div class="row">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="head">Product Name</label>
+                <input type="text" class="form-control" ngModel="{{fetchdata?.name}}" name="name"
+                  placeholder="Enter product name">
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputEmail1"  class="head">Product Price</label>
+                <input type="number" class="form-control" ngModel="{{fetchdata?.price}}" name="price"
+                  placeholder="Enter product price">
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputEmail1"  class="head">Product Quantity</label>
+                <input type="text" class="form-control" ngModel="{{fetchdata?.quantity}}" name="quantity"
+                  placeholder="Enter product quantity">
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputEmail1"  class="head">Product Category</label>
+                <input type="text" class="form-control" ngModel="{{fetchdata?.category}}" name="category"
+                  placeholder="Enter category">
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputEmail1"  class="head">Product Image URL</label>
+                <input type="text" class="form-control"ngModel="{{fetchdata?.image}}" name="image"
+                  placeholder="Enter product URL">
+              </div>
+            </form>
+          </div>
+          <button (click)="Update()"  class="btn">Update</button>&nbsp;
+          <button routerLink="/add" class="btn">Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

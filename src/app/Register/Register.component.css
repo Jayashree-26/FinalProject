@@ -7,10 +7,18 @@
   padding: 40px;
   width: 500px;
   transform: translate(-50%, -50%);
-  background-color: #eee4e1;
+  background-color: transparent;
   color: #5a4441;
 }
 
-.error {
+/* .error {
   border: 1px solid red;
+} */
+
+.form-label{
+  font-family: Cormorant Unicase, sans-serif;
+  font-size: 20px;
 }
+
+
+

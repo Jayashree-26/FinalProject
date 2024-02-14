@@ -1,0 +1,36 @@
+.d-flex{
+  margin-left: 85%;
+}
+
+table tr{
+  font-weight: 800;
+  font-size: 15px;
+}
+
+*{
+  font-family: "Cormorant Unicase", sans-serif;;
+}
+
+.container{
+  margin-right: 60%;
+}
+
+h4{
+  margin-left: 230%;
+}
+
+.nav-link{
+  color: #eee4e1;
+  font-size: 18px;
+}
+
+table th{
+  font-size: 20px;
+  color: #5a4441;
+  font-weight: 800;
+}
+
+table tr{
+  font-size: 18px;
+  color: #5a4441;
+}

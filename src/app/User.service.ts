@@ -1,33 +1,51 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { AbstractControl } from '@angular/forms';
+import { Router } from '@angular/router';
+import { map, Observable } from 'rxjs';
+import { environment } from 'src/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class UserService {
-  url: any = 'http://localhost:3000/userProfile';
+  email: string | undefined;
+  password: string | undefined;
+  loggedIn: any;
+  // private apiUrl = 'http://localhost:3000/registerUsers';
+  private apiUrl = environment.apiUrl; // Use the environment.apiUrl instead of hardcoding
 
-  constructor(private http: HttpClient) {}
 
-  addUser(body: any) {
-    console.log(body);
-    return this.http.post<any>(this.url,body);
+  constructor(private client:HttpClient,private http: HttpClient, private router:Router) {}
+  addUserInformation(body:any){
+
+    return this.client.post(`${this.apiUrl}/registerUsers`,body);
+
+  }
+  getUser(): Observable<any> {
+    const url = (`${this.apiUrl}/registerUsers`);
+    return this.http.get(url);
   }
 
-  retrieveUser() {
-    return this.http.get(this.url);
+  login(username: string, password: string) {
+    // Send the login request to the server and handle the response
+    this.http.post('/api/login', { username, password })
+      .subscribe((response: any) => {
+        if (response.success) {
+          // Store the user information
+          localStorage.setItem('currentUser', JSON.stringify(response.user));
+        }
+      });
+  }
+  authenticateUser(email: string, password: string): Observable<any> {
+    return this.http.get<any>(this.apiUrl).pipe(
+      map((data: any[]) => {
+        return data.find(
+          (user: any) => user.email === email && user.password === password
+        );
+      })
+    );
   }
 
-  deleteUser(id: any) {
-    return this.http.delete(this.url, id);
-  }
-
-  retrieveOneUser(id:any){
-    console.log(this.url+"/"+id);
-    return this.http.get(this.url+"/"+id);
-  }
-
-  updateUser(id: any, data: any) {
-    return this.http.patch(this.updateUser + "/" + id, data);
-  }
 }
+

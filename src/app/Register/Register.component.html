@@ -4,61 +4,84 @@
     <div class="col-md-6">
       <div class="card">
         <div class="text-center">
-          <h1>SignUp</h1>
+          <h1 style="font-family:  Cormorant Unicase, sans-serif;">Register</h1>
         </div>
         <form [formGroup]="registerForm" (ngSubmit)="register()">
+
+          <!-- username -->
           <div class="mb-3">
             <label for="username" class="form-label">Username</label>
-            <input formControlName="username" type="text" class="form-control" id="username">
-            <div class="form-text text-danger"
-              *ngIf="username.errors?.['required'] && (username.touched || username.dirty)">
-              Username is required.
-            </div>
-            <div class="form-text text-danger"
-              *ngIf="username.errors?.['minlength'] && (username.touched || username.dirty)">
-              Username is too short.
-            </div>
-            <div class="form-text text-danger"
-              *ngIf="username.errors?.['pattern'] && (username.touched || username.dirty)">
-              Username should start with alphabets.
+            <br>
+            <input type="text"
+              style="width: 100%;color:black; border-radius: 4px; height: 30px; border-color: transparent;"
+              placeholder="Username" name="username" [(ngModel)]="username" formControlName="username" required>
+
+            <div class="error"
+              *ngIf="registerForm.controls['username'].invalid&&registerForm.controls['username'].dirty">
+              <small style="color: red; font-family: Cormorant Unicase, sans-serif; font-size: 15px;" *ngIf="registerForm.controls['username'].errors?.['required']">Please enter a
+                valid username.</small>
+              <small style="color: red;font-family: Cormorant Unicase, sans-serif; font-size: 15px;" *ngIf="registerForm.controls['username'].errors?.['pattern']">7-15 characters
+                and number.</small>
             </div>
           </div>
+
+          <!-- email address -->
           <div class="mb-3">
             <label for="email" class="form-label">Email address</label>
-            <input formControlName="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
-            <div class="form-text text-danger" *ngIf="email.errors?.['required'] && (email.touched || email.dirty)">
-              Email is required.
-            </div>
-            <div class="form-text text-danger" *ngIf="email.errors?.['email'] && (email.touched || email.dirty)">
-              Email is Invalid.
+            <br>
+            <input type="email"
+              style="width: 100%; color:black; border-radius: 4px; height: 30px; border-color: transparent;"
+              placeholder="Email ID" name="email" [(ngModel)]="email" formControlName="email" required>
+            <div class="error" *ngIf="registerForm.controls['email'].invalid&&registerForm.controls['email'].dirty">
+              <small style="color: red;font-family: Cormorant Unicase, sans-serif; font-size: 15px;" *ngIf="registerForm.controls['email'].errors?.['required']">Please enter
+                email.</small>
+              <small style="color: red;font-family: Cormorant Unicase, sans-serif; font-size: 15px;" *ngIf="registerForm.controls['email'].errors?.['pattern']">Please enter correct
+                email.</small>
             </div>
           </div>
+
+          <!-- password -->
           <div class="mb-3">
             <label for="password" class="form-label">Password</label>
-            <input formControlName="password" type="password" id="password" class="form-control">
-            <div class="form-text text-danger"
-              *ngIf="password.errors?.['required'] && (password.touched || password.dirty)">
-              Password is required.
-            </div>
-            <div class="form-text text-danger"
-              *ngIf="password.errors?.['minlength'] || password.errors?.['maxlength'] && (password.touched || password.dirty)">
-              Password should be atleast 6 and maximum 15 characters long.
+            <br>
+            <input type="password"
+              style="width: 100%;color:black; border-radius: 4px; height: 30px; border-color: transparent;"
+              placeholder="Create password" name="password" [(ngModel)]="password" formControlName="password" required>
+            <div class="error"
+              *ngIf="registerForm.controls['password'].invalid&&registerForm.controls['password'].dirty">
+              <small style="color: red;font-family: Cormorant Unicase, sans-serif; font-size: 15px;" *ngIf="registerForm.controls['password'].errors?.['required']">Please enter
+                password.</small>
+              <small style="color: red;font-family: Cormorant Unicase, sans-serif; font-size: 15px;" *ngIf="registerForm.controls['password'].errors?.['pattern']">7-15
+                characters-At least one numeric
+                digit and special character.</small>
             </div>
           </div>
+
+          <!-- confirm password -->
           <div class="mb-3">
             <label for="confirm_password" class="form-label">Confirm Password</label>
-            <input formControlName="confirm_password" id="confirm_password" class="form-control">
-            <div class="form-text text-danger" [ngStyle]="{'display': repeatPass}"
-              *ngIf="(confirm_password.touched || confirm_password.dirty)">
-              Passwords doesnot match.
+            <br>
+            <input type="password"
+              style="width: 100%; color:black; border-radius: 4px; height: 30px; border-color: transparent;"
+              placeholder="Confirm password" name="confirm_password" [(ngModel)]="confirm_password"
+              formControlName="confirm_password" required>
+            <div class="error"
+              *ngIf="registerForm.controls['confirm_password'].invalid&&registerForm.controls['confirm_password'].dirty">
+              <small style="color: red;font-family: Cormorant Unicase, sans-serif; font-size: 15px;" *ngIf="registerForm.controls['confirm_password'].errors?.['required']">Please
+                enter correct
+                password.</small>
+              <small style="color: red;font-family: Cormorant Unicase, sans-serif; font-size: 15px;"
+                *ngIf="registerForm.controls['confirm_password'].errors?.['ConfirmedValidator']">Password doesn't
+                match.</small>
             </div>
           </div>
+
           <button type="submit" [disabled]="registerForm.invalid"
-            style="background-color: #5a4441; border-color: #5a4441; color: #eee4e1;" class="btn btn-primary mb-2"
-            routerLink="/register">Submit</button>
+            style="background-color: #5a4441; border-color: #5a4441;font-family: Cormorant Unicase, sans-serif; font-size: 15px; color: #eee4e1;" class="btn btn-primary mb-2"
+            >Submit</button>
         </form>
-        <a style="color: #5a4441; margin-top: 10px; text-decoration: none;" routerLink="/login">Already registered?
-          click to Login!</a>
+        <a style="color: #5a4441;font-family: Cormorant Unicase, sans-serif; font-size: 18px; margin-top: 10px; text-decoration: none;" routerLink="/login">Already registered?
+          Click to Login!</a>
       </div>
     </div>
   </div>

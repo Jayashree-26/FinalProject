@@ -1,0 +1,106 @@
+<body style="background-color: #eee4e1;">
+  <app-Header></app-Header>
+  <div class="container">
+    <div class="left-side">
+      <div class="text">
+        <h2>Smart Gold Plan</h2>
+        <hr style="width: 75%; border: 1px solid;  border-color:#5a4441;">
+        <p style="font-size: 16px;">As time goes on, just as outlooks and trends change, women are required to update their jewel reserves to
+          stay
+          relevant to modern times. We provides a good opportunity for gold investment, in the form of Smart
+          Gold
+          Plan.</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Amount</th>
+              <th>Month</th>
+              <th>Amount to Pay</th>
+              <th>Incentive Amount</th>
+              <th>Total Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>500</td>
+              <td>10</td>
+              <td>5000</td>
+              <td>500</td>
+              <td>5500</td>
+            </tr>
+            <tr>
+              <td>1000</td>
+              <td>10</td>
+              <td>10000</td>
+              <td>1000</td>
+              <td>11000</td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>10</td>
+              <td>20000</td>
+              <td>2000</td>
+              <td>22000</td>
+            </tr>
+            <tr>
+              <td>5000</td>
+              <td>10</td>
+              <td>50000</td>
+              <td>5000</td>
+              <td>55000</td>
+            </tr>
+            <tr>
+              <td>10000</td>
+              <td>10</td>
+              <td>100000</td>
+              <td>10000</td>
+              <td>110000</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="faq-section">
+          <h3>Frequently Asked Questions</h3>
+          <hr style="width: 75%; border: 1px solid;  border-color:#5a4441;">
+          <div class="faq" (click)="toggleFAQ(1)" [class.open]="faq1Open">
+            <h4>1. Can anyone become a member of this scheme? Is any proof required?</h4>
+            <p>Showroom customer: Anyone can become a member by providing valid ID proof and phone number.</p>
+          </div>
+          <div class="faq" (click)="toggleFAQ(2)" [class.open]="faq2Open">
+            <h4>2. How can the saved amount be redeemed?</h4>
+            <p>The saved amount can be redeemed only through purchase of gold ornaments, silver articles or diamond jewellery</p>
+          </div>
+          <div class="faq" (click)="toggleFAQ(3)" [class.open]="faq3Open">
+            <h4>3. Can the saved amount be redeemed in any other way than the above (like Cash)?</h4>
+            <p> Redemption is possible only via purchase of gold jewellery, gold coins and silver articles. Cash redemption cannot be availed.</p>
+          </div>
+        </div>
+
+        <h4>For Any Scheme Related Query Contact Us @:</h4>
+        <p>Mobile No: 9566442070</p>
+      </div>
+    </div>
+    <div class="right-side">
+      <h2>Instant scheme member</h2>
+      <hr style="width: 75%; border: 1px solid;  border-color:#5a4441;">
+      <form (submit)="redirectToMyOrders()" #myForm="ngForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" [(ngModel)]="formData.name" required #nameInput="ngModel">
+          <div *ngIf="nameInput.invalid && (nameInput.dirty || nameInput.touched)" class="error-message">
+            <span style="color: red; font-family: Cormorant Unicase, sans-serif; font-size: 15px;" *ngIf="nameInput.errors?.['required']">Name is required.</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="number">Phone Number:</label>
+          <input type="text" id="number" name="number" [(ngModel)]="formData.number" required #numberInput="ngModel">
+          <div *ngIf="numberInput.invalid && (numberInput.dirty || numberInput.touched)" class="error-message">
+            <span style="color: red; font-family: Cormorant Unicase, sans-serif; font-size: 15px;" *ngIf="numberInput.errors?.['required']">Phone Number is required.</span>
+          </div>
+        </div>
+        <button type="submit" [disabled]="myForm.invalid">Submit</button>
+      </form>
+
+    </div>
+  </div>
+  <app-footer></app-footer>
+</body>

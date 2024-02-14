@@ -1,4 +1,6 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { AddtocartService } from '../addtocart.service';
 
 @Component({
   selector: 'app-gold',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gold.component.css']
 })
 export class GoldComponent implements OnInit {
+  public totalItem :number=0;
 
-  constructor() { }
+  constructor(private viewportScoller: ViewportScroller,private addtocartService: AddtocartService) {
 
-  ngOnInit() {
   }
 
+
+  ngOnInit(): void {
+    
+  }
 }

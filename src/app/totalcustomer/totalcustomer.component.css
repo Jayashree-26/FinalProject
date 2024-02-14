@@ -1,0 +1,64 @@
+
+  body {
+    background-color: #eee4e1;
+    font-family: "Cormorant Unicase", sans-serif;
+  }
+
+
+  .card {
+    background-color: #eee4e1;
+    border-radius: 10px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    padding: 20px;
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 1px solid #ccc; */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+
+  .card-header h3 {
+    margin: 0;
+  }
+
+  /* Styles for the customer table */
+  .customer-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .customer-table th,
+  .customer-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .customer-table th {
+    font-weight: bold;
+    font-size: 20px;
+
+  }
+
+  .customer-table tbody tr:hover {
+    background-color: #5a4441;
+    color: #eee4e1;
+  }
+
+
+  .go-back-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 7px 15px;
+    font-size: 16px;
+    background-color: #5a4441;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }

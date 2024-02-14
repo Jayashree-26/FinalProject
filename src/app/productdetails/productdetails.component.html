@@ -1,0 +1,264 @@
+<!--
+<body style="background-color: #eee4e1;">
+  <app-Header></app-Header>
+  <div class="product-details">
+    <div class="product-image">
+      <img [src]="image" alt="Product Image">
+    </div>
+    <div class="product-info">
+      <h2>{{ jewelName }}</h2>
+      <p>Rate: ${{ jewelRate }} <span>(Free shipping included)</span></p>
+      <a (click)="showTable()" class="details-link">View Product Details</a>
+      <button class="buy-btn" routerLink="/buy">Buy Now</button>
+      <a href="tel:9566442070" class="question-link">Have any question? Call us at 9566442070</a>
+      <ul class="product_certification">
+        <li>
+          <img src="" alt="">
+          <span>BIS Hallmark Jewellery</span>
+        </li>
+
+        <li>
+          <img src="" alt="">
+          <span>Life Time Exchange</span>
+        </li>
+
+        <li>
+          <img src="" alt="">
+          <span>30 Days Return</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div *ngIf="showProductTable" class="product-table">
+    <div class="panel-heading1">Product Details</div>
+    <hr style="width: 50%; border-color:#5a4441;">
+    <div class="panel-heading">Product Description</div>
+    <ul class="left-info">
+      <li>
+        <label>Product ID</label>
+        <span>12345678</span>
+      </li>
+
+      <li>
+        <label>Purity</label>
+        <span>91.6</span>
+      </li>
+
+      <li>
+        <label>Metal</label>
+        <span>Gold</span>
+      </li>
+
+      <li>
+        <label>Weight</label>
+        <span>5.03grams</span>
+      </li>
+    </ul>
+    <div class="panel-heading">Price Breakup</div>
+    <div class="panel panel-default">
+      <div class="table-price-wrap" style="background-color: #eee4e1;">
+        <table class="table-price-break-section">
+          <tbody>
+            <tr>
+              <th>Component</th>
+              <th>Rate</th>
+              <th>Weight</th>
+              <th>Value</th>
+              <th>Discount</th>
+              <th>Final Value</th>
+            </tr>
+            <tr class="table__sub__title">
+              <td>Gold</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>91.6 Gold</td>
+              <td>5545</td>
+              <td>5.03</td>
+              <td class="currency-first">
+                ₹27,891</td>
+              <td class="currency-first">₹0</td>
+              <td class="currency-first">₹27,891</td>
+            </tr>
+            <tr class="table__sub__title">
+              <td>Making Charges</td>
+              <td></td>
+              <td></td>
+              <td class="currency-first"> ₹5,774 </td>
+              <td class="currency-first">₹1,155</td>
+              <td class="currency-first">₹4,619</td>
+            </tr>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td></td>
+              <td></td>
+              <td class="currency-first"><strong>₹33,665</strong></td>
+              <td class="currency-first">₹1,155</td>
+              <td class="currency-first"><strong>₹32,510</strong></td>
+            </tr>
+            <tr>
+              <td>GST (3%)</td>
+              <td></td>
+              <td></td>
+              <td class="currency-first">₹1,010</td>
+              <td>-</td>
+              <td class="currency-first">₹975</td>
+            </tr>
+            <tr>
+              <td><strong>Grand Total</strong></td>
+              <td></td>
+              <td></td>
+              <td class="currency-first"><strong>₹34,675</strong></td>
+              <td>-</td>
+              <td class="currency-first"><strong>₹33,485</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</body> -->
+
+
+<!-- product-details.component.html -->
+
+<body>
+  <app-Header></app-Header>
+  <div class="product-details">
+    <div class="product-image">
+      <img [src]="image" alt="Product Image">
+    </div>
+    <div class="product-info">
+      <!-- Product Description on Left Side -->
+      <h2>{{ jewelName }}</h2>
+      <p>Rate: ₹{{ jewelRate }} <span>(Free shipping included)</span></p>
+      <a (click)="showTable()" class="details-link">View Product Details</a>
+      <button class="buy-btn" (click)="redirectToMyOrders()">Buy Now</button>
+      <a href="tel:9566442070" class="question-link">Have any question? Call us at 9566442070</a>
+      <ul class="product_certification">
+        <!-- Product Certification Icons and Text -->
+        <li>
+          <img src="your-image-url" alt="BIS Hallmark Jewellery">
+          <!-- <span>BIS Hallmark Jewellery</span> -->
+        </li>
+        <li>
+          <img src="your-image-url" alt="Life Time Exchange">
+          <!-- <span>Life Time Exchange</span> -->
+        </li>
+        <li>
+          <img src="your-image-url" alt="30 Days Return">
+          <!-- <span>30 Days Return</span> -->
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div *ngIf="showProductTable" class="product-table">
+    <div class="left-side">
+      <!-- Left Side - Product Description and Details -->
+      <div class="panel-heading1">Product Details</div>
+      <ul class="left-info">
+        <li>
+          <label>Product ID</label>
+          <span>{{id}}</span>
+        </li>
+        <li>
+          <label>Purity</label>
+          <span>{{purity}}</span>
+        </li>
+        <li>
+          <label>Metal</label>
+          <span>{{metal}}</span>
+        </li>
+        <li>
+          <label>Weight</label>
+          <span>{{weight}}</span>
+        </li>
+      </ul>
+    </div>
+    <div class="right-side">
+      <!-- Right Side - Price Breakup -->
+      <div class="panel-heading">Price Breakup</div>
+      <div class="panel panel-default">
+        <div class="table-price-wrap" style="background-color: #eee4e1;">
+          <table class="table-price-break-section">
+            <!-- Price Breakup Table -->
+            <tbody>
+              <tr>
+                <th>Component</th>
+                <th>Rate</th>
+                <th>Weight</th>
+                <th>Value</th>
+                <th>Discount</th>
+                <th>Final Value</th>
+              </tr>
+              <tr class="table__sub__title">
+                <td>{{metal}}</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>{{purity}}</td>
+                <td>
+                  <ng-container *ngIf="metal === 'Gold'">
+                    {{ jewelRates['gold'] }}
+                  </ng-container>
+                  <ng-container *ngIf="metal === 'Silver'">
+                    {{ jewelRates['silver'] }}
+                  </ng-container>
+                  <ng-container *ngIf="metal === 'Diamond'">
+                    {{ jewelRates['diamond'] }}
+                  </ng-container>
+                </td>
+                <td>{{weight}}</td>
+                <td class="currency-first">₹27,891</td>
+                <td class="currency-first">₹0</td>
+                <td class="currency-first">₹27,891</td>
+              </tr>
+              <tr class="table__sub__title">
+                <td>Making Charges</td>
+                <td>-</td>
+                <td>-</td>
+                <td class="currency-first">₹5,774</td>
+                <td class="currency-first">₹1,155</td>
+                <td class="currency-first">₹4,619</td>
+              </tr>
+              <!-- <tr>
+                <td><strong>Total</strong></td>
+                <td>-</td>
+                <td>-</td>
+                <td class="currency-first"><strong>₹33,665</strong></td>
+                <td class="currency-first">₹1,155</td>
+                <td class="currency-first"><strong>₹32,510</strong></td>
+              </tr> -->
+              <tr>
+                <td>GST (3%)</td>
+                <td>-</td>
+                <td>-</td>
+                <td class="currency-first">₹1,010</td>
+                <td>-</td>
+                <td class="currency-first">₹975</td>
+              </tr>
+              <tr>
+                <td><strong>Grand Total</strong></td>
+                <td>-</td>
+                <td>-</td>
+                <td class="currency-first"><strong>₹34,675</strong></td>
+                <td>-</td>
+                <td class="currency-first"><strong>₹33,485</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</body>
